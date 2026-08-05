@@ -1,0 +1,13 @@
+interface:
+  display_name: "Morphed Product Campaign"
+  short_description: "Build a coherent product campaign in Morphed"
+  default_prompt: "Use $morphed-product-campaign to turn my product brief into a coherent image and video campaign."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "morphed"
+      description: "Morphed image and video generation tools"
+      transport: "streamable_http"
+      url: "https://api.morphed.app/mcp"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,13 @@
+interface:
+  display_name: "Morphed Generate"
+  short_description: "Create images and videos with Morphed"
+  default_prompt: "Use $morphed-generate to create the visual or video I describe."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "morphed"
+      description: "Morphed image and video generation tools"
+      transport: "streamable_http"
+      url: "https://api.morphed.app/mcp"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,11 @@
+{
+  "name": "morphed",
+  "version": "0.1.0",
+  "description": "Create images, videos, and product campaigns with Morphed.",
+  "author": {
+    "name": "Morphed",
+    "email": "support@morphed.app"
+  },
+  "homepage": "https://morphed.app",
+  "repository": "https://github.com/iambilalazhar/morphedrepo"
+}

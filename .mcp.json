@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "morphed": {
+      "type": "http",
+      "url": "https://api.morphed.app/mcp"
+    }
+  }
+}

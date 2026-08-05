@@ -1,0 +1,30 @@
+{
+  "name": "morphed",
+  "version": "0.1.0",
+  "description": "Create images, videos, and product campaigns with Morphed.",
+  "author": {
+    "name": "Morphed",
+    "email": "support@morphed.app",
+    "url": "https://morphed.app"
+  },
+  "homepage": "https://morphed.app",
+  "repository": "https://github.com/iambilalazhar/morphedrepo",
+  "keywords": ["image-generation", "video-generation", "creative"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Morphed",
+    "shortDescription": "Create images and videos with Morphed.",
+    "longDescription": "Connect your Morphed workspace and credits to generate images, videos, and coherent product campaigns from Codex.",
+    "developerName": "Morphed",
+    "category": "Design",
+    "capabilities": ["Image generation", "Video generation", "Product campaigns"],
+    "websiteURL": "https://morphed.app",
+    "privacyPolicyURL": "https://morphed.app/privacy-policy",
+    "termsOfServiceURL": "https://morphed.app/tos",
+    "defaultPrompt": [
+      "Use Morphed to create the image or video I describe.",
+      "Use Morphed to turn my product brief into a coherent visual campaign."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
