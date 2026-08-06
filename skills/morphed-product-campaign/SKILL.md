@@ -22,14 +22,16 @@ Do not invent testimonials, performance claims, prices, discounts, guarantees, o
 
 ## Campaign workflow
 
-1. Call `list_models` and `get_credits`.
-2. Define one campaign spine: product truth, audience, promise, visual world, and repeated motifs.
-3. Plan the smallest useful asset set: a hero visual, product-detail or benefit image, contextual image, and one short motion concept derived from an approved image.
-4. Generate image directions first. Use reference-image-capable models when product fidelity matters.
-5. Show completed outputs and let the user select a direction before spending credits on video, unless they explicitly requested an autonomous full run.
-6. Animate the selected frame with `generate_video`; preserve the product, composition anchors, and campaign motifs.
-7. Use stable, distinct idempotency keys per planned asset. Poll each returned job with `get_generation`.
-8. Deliver an asset manifest with job IDs, output URLs, aspect ratios, channel roles, and any failed or pending jobs.
+1. Call `get_workspace_context`. Reuse saved products, brand assets, characters, and an existing relevant project.
+2. If no relevant project exists, call `create_project` with a clear campaign name. Use its ID for every generation in this campaign.
+3. Call `list_models`, then `estimate_generation` for the complete planned asset set. Surface the expected spend before generation.
+4. Define one campaign spine: product truth, audience, promise, visual world, and repeated motifs.
+5. Plan the smallest useful asset set: a hero visual, product-detail or benefit image, contextual image, and one short motion concept derived from an approved image.
+6. Generate image directions first with the campaign `project_id`. Use reference-image-capable models when product fidelity matters.
+7. Show completed outputs and let the user select a direction before spending credits on video, unless they explicitly requested an autonomous full run.
+8. Animate the selected frame with `generate_video`; preserve the product, composition anchors, and campaign motifs.
+9. Use stable, distinct idempotency keys per planned asset. Poll each returned job with `get_generation`.
+10. Deliver an asset manifest with the project ID, job IDs, output URLs, aspect ratios, channel roles, total credits spent, and any failed or pending jobs.
 
 ## Consistency rules
 

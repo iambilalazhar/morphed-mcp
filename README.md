@@ -5,7 +5,7 @@ This plugin connects Claude Code or Codex to Morphed's remote MCP server and add
 - `morphed-generate` for image and video generation
 - `morphed-product-campaign` for coherent campaign asset sets
 
-The MCP server uses the authenticated user's Morphed workspace and credits.
+The MCP server uses the authenticated user's Morphed workspace and credits. Agents can reuse saved brand, product, character, and project context, estimate exact costs, and keep generations grouped in durable projects.
 
 ## Claude Code
 

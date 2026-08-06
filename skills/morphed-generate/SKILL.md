@@ -9,13 +9,14 @@ Use Morphed's current model catalog and credit balance to queue generation jobs 
 
 ## Workflow
 
-1. Call `list_models` for the requested media type. Never invent a model ID, capability, duration, resolution, aspect ratio, or credit price.
-2. Call `get_credits`. If the requested work may exceed the balance, explain that before generating.
+1. Call `get_workspace_context` and reuse relevant brand, product, character, and project context instead of asking for information Morphed already knows.
+2. Call `list_models` for the requested media type. Never invent a model ID, capability, duration, resolution, aspect ratio, or credit price.
 3. Resolve missing creative details from the request: subject, setting, composition, style, lighting, aspect ratio, and motion. Keep supplied references and brand constraints intact.
-4. Select the simplest available model that satisfies the request. State the model and applicable credit price before an expensive or multi-output run.
-5. Create a stable unique `idempotency_key`. Reuse that exact key if the same tool call is retried.
-6. Call `generate_image` or `generate_video`. Treat the returned job ID as queued work, not a completed asset.
-7. Call `get_generation` when the user asks for progress or when the host supports waiting. Report the real status and output URL; do not claim completion early.
+4. Call `estimate_generation` with the intended settings. Explain the model, exact credit cost, and insufficient balance before generating.
+5. Reference media must already have a public HTTPS URL. If the user only has a local file or connector attachment, explain that direct MCP ingestion is not yet available.
+6. Create a stable unique `idempotency_key`. Reuse that exact key if the same tool call is retried.
+7. Call `generate_image` or `generate_video`, passing `project_id` when the work belongs to a saved project. Treat the returned job ID as queued work, not a completed asset.
+8. Call `get_generation` when the user asks for progress or when the host supports waiting. Report the real status and output URL; do not claim completion early.
 
 ## Iteration
 
