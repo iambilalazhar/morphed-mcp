@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.morphed/mcp",
+  "title": "Morphed",
+  "description": "Create AI images and videos, manage projects and credits, and use workspace campaign context.",
+  "version": "0.1.0",
+  "websiteUrl": "https://morphed.app/mcp",
+  "icons": [
+    {
+      "src": "https://morphed.app/icon.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.morphed.app/mcp"
+    }
+  ]
+}
