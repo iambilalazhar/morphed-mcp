@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Morphed</title>
+  <rect width="512" height="512" rx="112" fill="#0A0A0A"/>
+  <path d="M112 352V160h58l86 99 86-99h58v192h-64V246l-80 91-80-91v106z" fill="#FFFFFF"/>
+</svg>

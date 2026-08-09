@@ -1,0 +1,21 @@
+{
+  "name": "morphed",
+  "displayName": "Morphed",
+  "version": "0.1.0",
+  "description": "Create AI images, videos, and coherent product campaigns with your Morphed workspace.",
+  "author": {
+    "name": "Bilal Azhar",
+    "email": "hello@morphed.app",
+    "url": "https://morphed.app"
+  },
+  "homepage": "https://morphed.app/mcp",
+  "repository": "https://github.com/iambilalazhar/morphed-mcp",
+  "license": "MIT",
+  "keywords": [
+    "ai-image-generation",
+    "ai-video-generation",
+    "creative-campaigns",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg"
+}
