@@ -26,17 +26,20 @@ Cursor opens Morphed OAuth so each user authorizes their own workspace and credi
 
 ## Claude Code
 
-From the Morphed repository:
+Add the public Morphed marketplace and install the plugin:
 
 ```sh
-claude plugin marketplace add .
+claude plugin marketplace add iambilalazhar/morphed-mcp
 claude plugin install morphed@morphed
 ```
 
-For one-session development:
+In Claude Cowork, open **Customize → Plugins → Add marketplace** and enter
+`https://github.com/iambilalazhar/morphed-mcp`.
+
+For one-session development from a local clone:
 
 ```sh
-claude --plugin-dir ./plugins/morphed
+claude --plugin-dir ./morphed-mcp
 ```
 
 ## Codex
