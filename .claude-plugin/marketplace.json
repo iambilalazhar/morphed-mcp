@@ -1,0 +1,15 @@
+{
+  "name": "morphed",
+  "owner": {
+    "name": "Morphed",
+    "email": "hello@morphed.app"
+  },
+  "description": "Official Morphed workflows and remote MCP connector for Claude.",
+  "plugins": [
+    {
+      "name": "morphed",
+      "source": "./",
+      "description": "Create images, videos, and product campaigns with Morphed."
+    }
+  ]
+}
