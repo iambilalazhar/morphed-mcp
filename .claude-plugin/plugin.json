@@ -1,11 +1,36 @@
 {
   "name": "morphed",
-  "version": "0.1.0",
-  "description": "Create images, videos, and product campaigns with Morphed.",
+  "displayName": "Morphed",
+  "version": "0.2.0",
+  "description": "Generate AI images, videos, UGC ads, and product campaigns from Claude with your Morphed workspace, brand context, and credits.",
   "author": {
-    "name": "Bilal Azhar",
-    "email": "hello@morphed.app"
+    "name": "Morphed",
+    "email": "hello@morphed.app",
+    "url": "https://morphed.app"
   },
-  "homepage": "https://morphed.app",
-  "repository": "https://github.com/iambilalazhar/morphed-mcp"
+  "icon": "./assets/icon.png",
+  "homepage": "https://morphed.app/mcp",
+  "documentationUrl": "https://morphed.app/mcp",
+  "supportUrl": "https://morphed.app/support",
+  "privacyPolicyUrl": "https://morphed.app/privacy-policy",
+  "termsOfServiceUrl": "https://morphed.app/tos",
+  "repository": "https://github.com/iambilalazhar/morphed-mcp",
+  "license": "MIT",
+  "keywords": [
+    "ai-image-generation",
+    "ai-video-generation",
+    "image-generation",
+    "video-generation",
+    "text-to-image",
+    "text-to-video",
+    "image-to-video",
+    "ugc-ads",
+    "ad-creative",
+    "product-photography",
+    "marketing",
+    "social-media",
+    "brand-assets",
+    "design",
+    "creative"
+  ]
 }

@@ -1,11 +1,23 @@
-# Morphed agent plugin
+# Morphed for Claude
 
-This open-source agent plugin connects Cursor, Claude Code, or Codex to Morphed's remote MCP server and adds two reusable workflows:
+Generate AI images, videos, UGC-style ads, and full product campaigns without leaving Claude. Morphed connects Claude to your Morphed workspace, so it can reuse your saved brand, product, and character context, pick a fitting image or video model, show the exact credit cost up front, and keep every result organized in a project.
 
-- `morphed-generate` for image and video generation
-- `morphed-product-campaign` for coherent campaign asset sets
+## What you can ask Claude
 
-The MCP server uses the authenticated user's Morphed workspace and credits. Agents can reuse saved brand, product, character, and project context, estimate exact costs, and keep generations grouped in durable projects.
+- "Make a square product shot of my serum on a marble counter in morning light."
+- "Turn this image into a five-second vertical video with a slow push-in."
+- "Plan and generate a launch campaign for our new sneaker: hero image, three social variants, and a short ad."
+- "What will this cost in credits before you generate it?"
+
+## What's included
+
+- **Morphed MCP connector** (`https://api.morphed.app/mcp`): workspace context, model catalog, credit estimates, image and video generation, and job status.
+- **`morphed-generate` skill**: image and video generation with cost checks and safe retries.
+- **`morphed-product-campaign` skill**: coherent campaign asset sets that keep the same product and visual direction across every asset.
+
+## How it works and what it sends
+
+The plugin talks only to Morphed's remote MCP server at `api.morphed.app`. You sign in with Morphed OAuth and approve read and generation access for your own workspace. Prompts, settings, and any reference image URLs you provide are sent to Morphed to create your media. Generation spends your Morphed credits, and Claude shows the cost before it generates. No API key is stored in this repository.
 
 ## Cursor
 
@@ -57,7 +69,8 @@ Add `https://api.morphed.app/mcp` as a custom connector. OpenAI also supports Mo
 
 ## Links
 
-- Website: https://morphed.app/mcp
+- Website: https://morphed.app
+- Documentation: https://morphed.app/mcp
 - Support: https://morphed.app/support
 - Privacy: https://morphed.app/privacy-policy
 - Terms: https://morphed.app/tos
